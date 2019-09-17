@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/home_dest">
+    <fragment
+        android:id="@+id/home_dest"
+        android:name="com.hyunyong.test.lotto.view.SplashFragment"
+        android:label="@string/lotto_game"
+        tools:layout="@layout/fragment_splash">
+
+        <action
+            android:id="@+id/welcome_action"
+            app:destination="@id/welcome_dest"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/deeplink_acition"
+            app:destination="@id/deeplink_dest"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/lotto_action"
+            app:destination="@id/lotto_dest"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/welcome_dest"
+        android:name="com.hyunyong.test.lotto.view.WelcomeFragment"
+        tools:layout="@layout/fragment_welcome">
+
+        <action
+            android:id="@+id/lotto_action"
+            app:destination="@+id/lotto_dest"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/lotto_dest"
+        android:name="com.hyunyong.test.lotto.view.LottoFragment"
+        tools:layout="@layout/fragment_lotto">
+
+        <action
+            android:id="@+id/lookup_action"
+            app:destination="@id/lookup_dest"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/frequency_action"
+            app:destination="@id/frequency_dest"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/lookup_dest"
+        android:name="com.hyunyong.test.lotto.view.LookupLottoFragment"
+        tools:layout="@layout/fragment_lookup" />
+
+    <fragment
+        android:id="@+id/frequency_dest"
+        android:name="com.hyunyong.test.lotto.view.FrequencyFragment"
+        tools:layout="@layout/fragment_frequency" />
+
+    <fragment
+        android:id="@+id/deeplink_dest"
+        android:name="com.hyunyong.test.lotto.view.DeepLinkFragment"
+        tools:layout="@layout/fragment_deeplink">
+
+        <argument
+            android:name="no"
+            android:defaultValue="1" />
+    </fragment>
+
+</navigation>

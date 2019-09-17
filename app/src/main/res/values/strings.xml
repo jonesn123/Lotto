@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">로또</string>
+    <string name="lotto_game">로또 게임</string>
+    <string name="loading_info">당첨 정보를 불러오고 있습니다..\n 잠시만 기다려주세요</string>
+    <string name="welcome_message">저희 앱에 오신 것을 환영합니다.</string>
+    <string name="start">시작</string>
+    <string name="lotto_order">로또 회차 입력</string>
+    <string name="lotto_number_auto_crate">로또 번호 자동 생성</string>
+    <string name="check_winner">해당 회차 당첨 조회</string>
+    <string name="check_winner_previous">지난 회차 이력 조회</string>
+    <string name="frequency_number">많이 출현한 번호 조회</string>
+    <string name="dynamic_link_host">link.lotto</string>
+    <string name="number">번호</string>
+    <string name="count">횟수</string>
+</resources>
